@@ -15,8 +15,8 @@
 
 
 
-#define SITE_SERVER @"http://10.211.55.117:8081/rest"
-//#define SITE_SERVER @"http://139.196.13.82:88/rest"
+//#define SITE_SERVER @"http://10.211.55.117:8081/rest"
+#define SITE_SERVER @"http://139.196.13.82:88/rest"
 //#define SITE_SERVER @"http://api.appsjk.com/rest"
 
 
