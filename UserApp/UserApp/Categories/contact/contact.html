@@ -1,0 +1,88 @@
+<!--header=begin-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>闪酒客</title>
+<meta name="keywords" content="闪酒客">
+<meta name="description" content="闪酒客">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript">
+var phoneWidth = parseInt(window.screen.width);
+var phoneScale = phoneWidth/750;
+document.write('<meta name="viewport" content="width=750, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+'">');
+</script>
+<!--<link rel="stylesheet" href="./public/css/style.css">-->
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="touch.js"></script>
+<script type="text/javascript" src="iscroll-probe.js"></script>
+<script type="text/javascript" src="plug.js"></script>
+<script type="text/javascript" src="dotimeout.js"></script>
+<script type="text/javascript" src="jquery.easing.js"></script>
+</head>
+<body>
+<div class="page">
+<!--page=begin-->
+<div class="scroll-wrap">
+<div class="scroll">
+<!--header=end-->
+
+<!--new=begin-->
+<div class="scroll-wrap">
+<div class="scroll">
+	<div class="p30 bg-white"><img src="contact-map-sh.png" height="350" class="db"></div>
+	<div class="cell">
+		<div class="item f34">上海市静安区武定路555号快易名商207室</div>
+		<div class="item">联系人：张逍</div>
+		<div class="item">电&nbsp;&nbsp;&nbsp;话：021-32517236</div>
+	</div>
+	<div class="p30 bg-white"><img src="contact-map-hz.png" height="350" class="db"></div>
+	<div class="cell">
+		<div class="item f34">杭州市江干区凤起东路42号广茵大厦1602室</div>
+		<div class="item">联系人：劳先生</div>
+		<div class="item">电&nbsp;&nbsp;&nbsp;话：13067713267</div>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+$(function(){
+$(".page").last().attr("id","page"+JH.NumberUtilities.getUnique());
+eval('function init'+$(".page").last().attr("id")+'(){\
+var id,myscroll,y;\
+id = $(".page").last().attr("id");\
+/*渲染前*/\
+if($(".page").length>1){\
+$("#"+id).append(\'\
+	<style type="text/css">\
+	#\'+id+\'{}\
+	</style>\
+\');\
+}\
+$("#"+id).append(\'\
+	<style type="text/css">\
+	#\'+id+\'{}\
+	</style>\
+\');\
+/*页面效果渲染*/\
+if($(".page").length>1){\
+	myscroll = new IScroll("#"+id+">.scroll-wrap", {probeType:3,scrollbars:JH.scrollbar,shrinkScrollbars:JH.shrinkScrollbar,mouseWheel:JH.mousewheel});\
+}else{\
+	JH.pagescroll = new IScroll("#"+id+">.scroll-wrap", {probeType:3,scrollbars:JH.scrollbar,shrinkScrollbars:JH.shrinkScrollbar,mouseWheel:JH.mousewheel});\
+	myscroll = JH.pagescroll;\
+}\
+}');
+eval('init'+$(".page").last().attr("id")+'()');
+});
+</script>
+<!--new=end-->
+
+<!--footer=begin-->
+</div>
+</div>
+<!--page=end-->
+</div>
+<script type="text/javascript" src="global.js"></script>
+</body>
+</html>
+<!--footer=end-->
